@@ -4,7 +4,6 @@ A console-based **football (soccer) match simulator** written in Dart, showcasin
 
 Players, trainers, teams, stadiums, and even the weather come together to create an unpredictable match outcome.  
 
----
 
 ## 📜 Features
 
@@ -19,17 +18,16 @@ Players, trainers, teams, stadiums, and even the weather come together to create
   - **Polymorphism**: Different modifiers (`StrategyModifier`, `WeatherModifier`, `RandomModifier`) are applied without knowing their exact type.
   - **Encapsulation**: Each class handles its own logic.
 
----
 
 ## 📂 Project Structure
 
 ```
 
 lib/
-main.dart                  # Entry point
+main.dart                # Entry point
 core/
 enums.dart               # Enums for Strategy & WeatherCondition
-input\_handler.dart       # Handles user input
+input\_handler.dart      # Handles user input
 models/
 person.dart              # Base Person class
 player.dart              # Player class
@@ -37,16 +35,15 @@ trainer.dart             # Trainer class
 team.dart                # Team class
 stadium.dart             # Stadium class
 modifiers/
-power\_modifier.dart      # Abstract PowerModifier
-strategy\_modifier.dart   # Strategy-based bonus
-weather\_modifier.dart    # Weather-based bonus
-random\_modifier.dart     # Random bonus
+power\_modifier.dart     # Abstract PowerModifier
+strategy\_modifier.dart  # Strategy-based bonus
+weather\_modifier.dart   # Weather-based bonus
+random\_modifier.dart    # Random bonus
 game/
 game.dart                # Game flow logic
 
 ````
 
----
 
 ## 🚀 Getting Started
 
@@ -64,7 +61,6 @@ dart pub get
 dart run lib/main.dart
 ```
 
----
 
 ## 🛠 How It Works
 
@@ -86,7 +82,6 @@ dart run lib/main.dart
      * **Random factor** (adds unpredictability)
    * The team with the highest total power wins!
 
----
 
 ## 🎯 Example Gameplay
 
@@ -119,13 +114,4 @@ Enter number of players: 5
 
 🏆 FALCONS WINS THE MATCH! 🏆
 ```
-
----
-
-## 📌 Future Improvements
-
-* Player fatigue and injuries
-* Multiple matches & tournaments
-* Saving & loading teams from files
-* Improved weather effects
 
